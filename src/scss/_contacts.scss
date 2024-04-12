@@ -1,0 +1,175 @@
+@import "mixines";
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    &__title {
+      @include titles();
+    }
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      &--form {
+        margin-top: 25px;
+        position: relative;
+        width: 70%;
+        &_input {
+          width: 100%;
+          background-color: rgb(240, 240, 240);
+          border: none;
+          margin-bottom: 8px;
+          padding: 15px;
+        }
+        &_message {
+          height: 162.5px;
+          resize: none;
+        }
+        &_politic {
+          margin: 20px 0 25px 50px;
+          letter-spacing: 1px;
+        }
+        &_button {
+          @include button(
+            $pos: relative,
+            $bc: rgb(39, 39, 39),
+            $left: 0,
+            $bch: rgb(64, 63, 74)
+          );
+          &-container {
+            @include buttonContainer($padd: 26px 35px);
+            &___text {
+              @include buttonText();
+              color: white;
+            }
+            &___arrow {
+              margin-left: 7px;
+            }
+          }
+        }
+        &_mark {
+          position: absolute;
+          left: 7px;
+          top: 52.5%;
+        }
+      }
+      &--img {
+        width: 70%;
+      }
+    }
+  }
+  .phone-number,
+  .email,
+  .message {
+    position: relative;
+  }
+  .number-placeholder,
+  .email-placeholder {
+    @include placeholder();
+  }
+  .message-placeholder {
+    @include placeholder($top: 11%);
+  }
+  .red-star {
+    color: red;
+  }
+  .phone-number-input:focus ~ .number-placeholder,
+  .phone-number-input:valid ~ .number-placeholder,
+  .email-input:focus ~ .email-placeholder,
+  .email-input:valid ~ .email-placeholder,
+  .message-input:focus ~ .message-placeholder,
+  .message-input:valid ~ .message-placeholder {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 35px;
+    &__title {
+      @include titles();
+    }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      &--form {
+        margin-top: 0;
+        margin-right: 35px;
+        position: relative;
+        &_input {
+          width: 100%;
+          background-color: rgb(240, 240, 240);
+          border: none;
+          margin-bottom: 8px;
+          padding: 15px;
+        }
+        &_message {
+          height: 162.5px;
+          resize: none;
+        }
+        &_politic {
+          margin: 20px 0 25px 50px;
+          letter-spacing: 1px;
+        }
+        &_button {
+          @include button(
+            $pos: relative,
+            $bc: rgb(39, 39, 39),
+            $left: 0,
+            $bch: rgb(64, 63, 74)
+          );
+          &-container {
+            @include buttonContainer($padd: 26px 35px);
+            &___text {
+              @include buttonText();
+              color: white;
+            }
+            &___arrow {
+              margin-left: 7px;
+            }
+          }
+        }
+        &_mark {
+          position: absolute;
+          left: 7px;
+          top: 52.5%;
+        }
+      }
+    }
+  }
+  .phone-number,
+  .email,
+  .message {
+    position: relative;
+  }
+  .number-placeholder,
+  .email-placeholder {
+    @include placeholder();
+  }
+  .message-placeholder {
+    @include placeholder($top: 11%);
+  }
+  .red-star {
+    color: red;
+  }
+  .phone-number-input:focus ~ .number-placeholder,
+  .phone-number-input:valid ~ .number-placeholder,
+  .email-input:focus ~ .email-placeholder,
+  .email-input:valid ~ .email-placeholder,
+  .message-input:focus ~ .message-placeholder,
+  .message-input:valid ~ .message-placeholder {
+    display: none;
+  }
+}
+

@@ -1,0 +1,84 @@
+@import "./variables.scss";
+
+@mixin titles() {
+  margin: 25px 0 20px;
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  font-weight: 100;
+  color: $title-color;
+}
+
+@mixin buttonHome(
+  $bc: #fff,
+  $pos: absolute,
+  $left: 5px,
+  $bottom: 1px,
+  $bch: rgb(213, 230, 312)
+) {
+  cursor: pointer;
+  border: none;
+  background-color: $bc;
+  position: $pos;
+  bottom: $bottom;
+  left: $left;
+  transition-property: all;
+  transition: all ease 0.6s;
+  &:hover {
+    transform: scale(1.15);
+    transition: 0.6s;
+    background-color: $bch;
+    bottom: 20px;
+    left: 40px;
+  }
+}
+@mixin button(
+  $bc: #fff,
+  $pos: absolute,
+  $bottom: 0,
+  $left: 0,
+  $bch: rgba(171, 191, 202, 0.97)
+) {
+  cursor: pointer;
+  border: none;
+  background-color: $bc;
+  position: $pos;
+  bottom: $bottom;
+  left: $left;
+  transition-property: all;
+  transition: all ease 0.6s;
+  &:hover {
+    transform: scale(1.15);
+    transition: 0.6s;
+    background-color: $bch;
+  }
+}
+@mixin buttonContainer($d: flex, $jc: center, $ai: center, $padd) {
+  display: $d;
+  justify-content: $jc;
+  align-items: $ai;
+  padding: $padd;
+}
+@mixin buttonText() {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+@mixin placeholder($top: 42.5%) {
+  position: absolute;
+  left: 15px;
+  top: $top;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgb(122, 122, 122);
+  font-size: 0.8rem;
+}
+
+@mixin borderRadiuses($pers: 25%) {
+  border-top-left-radius: $pers;
+  border-top-right-radius: $pers;
+  border-bottom-left-radius: $pers;
+  border-bottom-right-radius: $pers;
+}
+

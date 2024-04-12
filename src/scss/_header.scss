@@ -1,0 +1,127 @@
+.hide {
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .header {
+    width: 100%;
+    height: 160px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    &__content {
+      margin: 0 auto;
+      padding: 0 10px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--logo {
+        margin-left: 40px;
+        img {
+          width: 120px;
+        }
+      }
+      &--nav {
+        &_list {
+          display: none;
+          &.on {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: start;
+            padding: 0 0 17px;
+            background-color: transparent;
+            position: absolute;
+            left: 50%;
+            top: 159px;
+            transform: translate(-48%, 0);
+            border-top: 2px solid rgb(32, 32, 32);
+          }
+          &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 8px 35px;
+            transition-property: all;
+            transition: all ease 0.6s;
+            &:hover {
+              display: inline-flex;
+              transform: scale(1.2);
+              transition: 0.6s;
+              font-weight: bold;
+            }
+            &___text {
+              text-transform: uppercase;
+              font-family: "Inter", sans-serif;
+              color: black;
+              letter-spacing: 3px;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+      &--burger {
+        margin-right: 45px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 102px;
+    &__content {
+      justify-content: space-evenly;
+      &--logo {
+        img {
+          width: 60px;
+        }
+      }
+      &--nav {
+        width: 70%;
+        &_list {
+          height: 100%;
+          display: flex;
+          justify-content: space-around;
+          &-link {
+            margin: 0;
+            &:hover {
+              border-bottom: 1px solid rgb(32, 32, 32);
+              padding-bottom: 4px;
+            }
+            &___text {
+              font-size: 0.6rem;
+            }
+          }
+        }
+      }
+      &--burger {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    &__content {
+      max-width: 1170px;
+      justify-content: space-between;
+      &--nav {
+        &_list {
+          &-link {
+            // @include borderRadiuses();
+            &:hover {
+              border-top: 1px solid rgb(32, 32, 32);
+              padding-top: 5px;
+              // @include borderRadiuses();
+            }
+          }
+        }
+      }
+    }
+  }
+}

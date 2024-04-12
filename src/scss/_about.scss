@@ -1,0 +1,109 @@
+@import "mixines";
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+  .about {
+    background-color: $background-color;
+    margin: 100px 0 0 0;
+    &__content {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      &--gallery {
+        position: relative;
+        &_photo1 {
+          position: absolute;
+          top: -15px;
+          left: 125px;
+        }
+        &_photo2 {
+          position: absolute;
+          top: 25px;
+          right: 150px;
+        }
+        &_photo3 {
+          position: absolute;
+          bottom: -20px;
+          left: 125px;
+        }
+      }
+      &--text {
+        padding: 10px 135px;
+        &_title {
+          @include titles();
+        }
+        &_content {
+          width: 100%;
+          line-height: 1.6rem;
+          font-size: 1.1rem;
+          font-weight: 100;
+          &-button {
+            @include button($pos: relative, $left: 0);
+            margin-top: 25px;
+            &___container {
+              @include buttonContainer($padd: 26px 65px);
+              &---text {
+                @include buttonText();
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    background-color: $background-color;
+    height: 435px;
+    margin: 100px 0 0 0;
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      &--gallery {
+        position: relative;
+        &_photo1 {
+          position: absolute;
+          top: 25px;
+          left: 45px;
+        }
+        &_photo2 {
+          position: absolute;
+          top: 60px;
+          right: -20px;
+        }
+        &_photo3 {
+          position: absolute;
+          bottom: -50px;
+          left: 45px;
+        }
+      }
+      &--text {
+        margin: 0 0 0 55px;
+        padding: 0;
+        &_title {
+          @include titles();
+        }
+        &_content {
+          width: 80%;
+          line-height: 1.6rem;
+          font-size: 1.1rem;
+          font-weight: 100;
+          &-button {
+            @include button($pos: relative, $left: 0);
+            margin-top: 25px;
+            &___container {
+              @include buttonContainer($padd: 26px 65px);
+              &---text {
+                @include buttonText();
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

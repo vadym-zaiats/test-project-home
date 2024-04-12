@@ -1,0 +1,122 @@
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+  .footer {
+    background-color: rgb(36, 36, 36);
+    &__container {
+      max-width: 1170px;
+      margin: 120px auto 0;
+      &--content {
+        color: white;
+        padding: 50px 0 15px;
+        display: flex;
+        justify-content: space-between;
+        h5 {
+          font-weight: 800;
+          margin-bottom: 35px;
+        }
+        &_item {
+          &-list {
+            &___item {
+              font-weight: 100;
+              margin-bottom: 26px;
+              a {
+                color: white;
+              }
+            }
+          }
+          &-contacts {
+            margin-left: 25px;
+            &___item {
+              position: relative;
+              font-weight: 100;
+              margin-bottom: 50px;
+              &---svg {
+                position: absolute;
+                left: -30px;
+                top: -3px;
+              }
+              &---address {
+                line-height: 25px;
+              }
+            }
+          }
+          &-socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+              margin-right: 40px;
+            }
+          }
+        }
+      }
+      &--copyright {
+        color: rgb(103, 103, 103);
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    background-color: rgb(36, 36, 36);
+    &__container {
+      max-width: 1170px;
+      margin: 120px auto 0;
+      &--content {
+        color: white;
+        padding: 50px 0 15px;
+        display: flex;
+        justify-content: space-between;
+        h5 {
+          font-weight: 800;
+          margin-bottom: 35px;
+        }
+        &_item {
+          &-list {
+            &___item {
+              font-weight: 100;
+              margin-bottom: 26px;
+              a {
+                color: white;
+              }
+            }
+          }
+          &-contacts {
+            margin-left: 25px;
+            &___item {
+              position: relative;
+              font-weight: 100;
+              margin-bottom: 50px;
+              &---svg {
+                position: absolute;
+                left: -30px;
+                top: -3px;
+              }
+              &---address {
+                line-height: 25px;
+              }
+            }
+          }
+          &-socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li {
+              margin-right: 40px;
+            }
+          }
+        }
+      }
+      &--copyright {
+        background-color: rgb(36, 36, 36);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px 0;
+        text-align: center;
+        color: rgb(103, 103, 103);
+      }
+    }
+  }
+}

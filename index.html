@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/scss/index.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="./dist/js/scripts.min.js" defer></script>
+    <title>Vadym Zaiats</title>
+  </head>
+  <body>
+   <div id="root">
+    <header class="header">
+      <div class="header__content">
+        <a href="#1" class="header__content--logo">
+          <img src="./dist/img//logo.png" alt="logo">
+        </a>
+        <nav class="header__content--nav">
+          <ul class="header__content--nav_list">
+            <li class="header__content--nav_list-link">
+              <a class="header__content--nav_list-link___text" href="#1">Главная</a>
+            </li>
+            <li class="header__content--nav_list-link">
+              <a class="header__content--nav_list-link___text" href="#2">Галерея</a>
+            </li>
+            <li class="header__content--nav_list-link">
+              <a class="header__content--nav_list-link___text" href="#3">Проэкты</a>
+            </li>
+            <li class="header__content--nav_list-link">
+              <a class="header__content--nav_list-link___text header__content--nav_list-link___text---sertific" href="#4">Сертификати</a>
+            </li>
+            <li class="header__content--nav_list-link">
+              <a class="header__content--nav_list-link___text" href="#5">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <img class="header__content--burger open" src="./dist/img/burger.png" alt="burger">
+        <img class="header__content--burger close hide" src="./dist/img/close.png" alt="close">
+      </div>
+    </header>
+    <main class="main">
+      <section class="home">
+        <div class="home__info">
+          <img class="home__info--project" src="./dist/img/project.png" alt="project" />
+          <img class="home__info--home" src="./dist/img/home.png" alt="home" />
+          <div class="home__info--arrows">
+            <img
+              class="home__info--arrows_left"
+              src="./dist/img/left-arrow.png"
+              alt="arrow-left"
+            />
+            <img
+              class="home__info--arrows_right"
+              src="./dist/img/right-arrow.png"
+              alt="arrow-right"
+            />
+          </div>
+          <ul class="home__info--list">
+            <li class="home__info--list_1 active">01</li>
+            <li>/</li>
+            <li class="home__info--list_2">02</li>
+          </ul>
+        </div>
+      <div class="home__galery">
+        <ul class="home__galery--img">
+          <li><img src="./dist/img/first-sec.png" alt="home" /></li>
+          <li><img src="./dist/img/about-4.jpeg" alt="about-4" /></li>
+        </ul>
+        <button class="home__galery--button">
+          <div class="home__galery--button_container">
+            <span class="home__galery--button_container-text">читать</span>
+            <img
+              class="home__galery--button_container-arrow"
+              src="./dist/img/arrow-2-right-long.png"
+              alt="right-long"
+            />
+          </div>
+        </button>
+      </div>
+      </section>
+      <section class="about">
+        <div class="about__content">
+          <div class="about__content--gallery">
+            <img
+              class="about__content--gallery_photo1"
+              src="./dist/img/about-1.png"
+              alt=""
+            />
+            <img
+              class="about__content--gallery_photo2"
+              src="./dist/img/about-3.png"
+              alt=""
+            />
+            <img
+              class="about__content--gallery_photo3"
+              src="./dist/img/about-2.png"
+              alt=""
+            />
+          </div>
+          <div class="about__content--text">
+            <h3 class="about__content--text_title">О компании</h3>
+            <p class="about__content--text_content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequatur aliquam eligendi magni ex quidem enim vero! Commodi
+              deleniti aspernatur vero doloremque magni pariatur eius molestias
+              provident, cupiditate enim facere harum! Repellat repellendus quia
+              ab dignissimos numquam praesentium perspiciatis aut est alias sed,
+              minus eveniet, sint tempore enim non laborum distinctio.
+            </p>
+            <button class="about__content--text_content-button">
+              <div class="about__content--text_content-button___container">
+                <span
+                  class="about__content--text_content-button___container---text"
+                  >читать</span
+                >
+                <img
+                  class="about__content--text_content-button___container---arrow"
+                  src="./dist/img/arrow-2-right-long.png"
+                  alt="right-long"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="tasks">
+        <h3 class="tasks__title">Основные задачи</h3>
+        <div class="tasks__content">
+          <div class="tasks__content--first">
+            <img src="./dist/img/1.png" alt="1" />
+            <p class="tasks__content--first_text">
+              Создание комфортных условий и повышение качества обслуживания
+              клиентов
+            </p>
+          </div>
+          <div class="tasks__content--second">
+            <img src="./dist/img/2.png" alt="2" />
+            <p class="tasks__content--second_text">
+              Постоянно совершенствовать качество предоставляемых услоу путем
+              обучения персонала, закупки нового оборудования и усиленой рекламы
+              на рынке
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <h3 class="projects__title">Наши проекты</h3>
+        <div class="projects__gallery">
+          <div class="projects__gallery--item1">
+            <img src="./dist/img/projects-1.png" alt="project1" />
+          </div>
+          <div class="projects__gallery--item2">
+            <img src="./dist/img/projects-2.png" alt="project2" />
+          </div>
+          <div class="projects__gallery--item3">
+            <img src="./dist/img/projects-3.png" alt="project3" />
+          </div>
+          <div class="projects__gallery--item4">
+            <img src="./dist/img/projects-4.png" alt="project4" />
+          </div>
+          <div class="projects__gallery--item5">
+            <img src="./dist/img/projects-5.png" alt="project5" />
+          </div>
+        </div>
+        <button class="projects__button">
+          <div class="projects__button--container">
+            <span class="projects__button--container_text">все проекты</span
+            ><img
+              class="projects__button--container_arrow"
+              src="./dist/img/arrow-2-right-long-white.png"
+              alt="right-long"
+            />
+          </div>
+        </button>
+      </section>
+      <section class="contacts">
+        <h3 class="contacts__title">Связаться с нами</h3>
+        <div class="contacts__content">
+          <form class="contacts__content--form">
+            <input
+              class="contacts__content--form_input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Имя"
+            />
+            <div class="phone-number">
+              <input
+              class="contacts__content--form_input phone-number-input"
+              type="text"
+              id="number"
+              name="number"
+              required
+            />
+          <div class="number-placeholder">Номер телефона <span class="red-star">*</span></div>
+          </div>
+            <div class="email">
+              <input
+              class="contacts__content--form_input email-input"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          <div class="email-placeholder">E-mail <span class="red-star">*</span></div>
+          </div>
+            <input
+              class="contacts__content--form_input"
+              type="text"
+              id="product"
+              name="product"
+              placeholder="Интересующий товар/услуга"
+            />
+            <div class="message">            
+              <textarea
+              class="contacts__content--form_input contacts__content--form_message message-input"
+              type="text"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <div class="message-placeholder">Сообщение <span class="red-star">*</span></div>
+            </div>
+            <svg class="contacts__content--form_mark" fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1827.701 303.065 698.835 1431.801 92.299 825.266 0 917.564 698.835 1616.4 1919.869 395.234z" fill-rule="evenodd"/>
+          </svg>
+            <p class="contacts__content--form_politic">
+              Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+            </p>
+            <button class="contacts__content--form_button" type="submit">
+              <div class="contacts__content--form_button-container">
+                <span class="contacts__content--form_button-container___text"
+                  >отправить</span
+                ><img
+                  class="contacts__content--form_button-container___arrow"
+                  src="./dist/img/arrow-2-right-long-white.png"
+                  alt="right-long"
+                />
+              </div>
+            </button>
+          </form>
+            <img
+              class="contacts__content--img"
+              src="./dist/img/contact.png"
+              alt="conctact-us"
+            />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container--content">
+          <div class="footer__container--content_item">
+            <img src="./dist//img//logo-white.png" alt="logo">
+          </div>
+          <div class="footer__container--content_item">
+            <h5>Информация</h5>
+            <ul class="footer__container--content_item-list">
+              <li class="footer__container--content_item-list___item">
+                <a href="#home">Главная</a>
+              </li>
+              <li class="footer__container--content_item-list___item">
+                <a href="#gallery">Галерея</a>
+              </li>
+              <li class="footer__container--content_item-list___item">
+                <a href="#projects">Проекты</a>
+              </li>
+              <li class="footer__container--content_item-list___item">
+                <a href="#sertificates">Сертификаты</a>
+              </li>
+              <li class="footer__container--content_item-list___item">
+                <a href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__container--content_item">
+            <h5>Контакты</h5>
+            <ul class="footer__container--content_item-contacts">
+              <li class="footer__container--content_item-contacts___item">
+                <svg
+                  class="footer__container--content_item-contacts___item---svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p
+                  class="footer__container--content_item-contacts___item---address"
+                >
+                  100000, Республика Казахстан, <br />
+                  г. Караганда, ул. Телевизионная 10
+                </p>
+              </li>
+              <li class="footer__container--content_item-contacts___item">
+                <svg
+                  class="footer__container--content_item-contacts___item---svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p>+38 (000) 000 00 00</p>
+              </li>
+              <li class="footer__container--content_item-contacts___item">
+                <svg
+                  class="footer__container--content_item-contacts___item---svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                    stroke="#fff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p>mail@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__container--content_item">
+            <h5>Социальные сети</h5>
+            <ul class="footer__container--content_item-socials">
+              <li>
+                <a href="https://uk-ua.facebook.com/" target="_blank"">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="-5 0 20 20"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-385.000000, -7399.000000)"
+                        fill="#fff"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" target="_blank">
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 -2 20 20"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-60.000000, -7521.000000)"
+                        fill="#fff"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <svg
+                  fill="#fff"
+                  height="20px"
+                  width="20px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="-143 145 512 512"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z
+                M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7
+               c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4
+               c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6
+               c35.5,0,63.3,23,63.3,72.4V508.1z"
+                  />
+                </svg></a>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/" target="_blank"><svg width="20px" height="20px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.8097 14.2306C10.4323 14.06 9.98797 14.2276 9.81733 14.605C9.64668 14.9824 9.81431 15.4267 10.1917 15.5974L10.8097 14.2306ZM12.5007 15.344L12.5015 16.0941L12.5136 16.0939L12.5007 15.344ZM17.5007 10.172L16.7508 10.1595C16.7507 10.1678 16.7507 10.1762 16.7508 10.1845L17.5007 10.172ZM12.5007 5L12.5136 4.25011C12.505 4.24996 12.4964 4.24996 12.4879 4.25011L12.5007 5ZM7.50072 10.172L8.25072 10.1741C8.25073 10.1692 8.2507 10.1644 8.25062 10.1595L7.50072 10.172ZM7.68386 13.4079C7.90528 13.758 8.36855 13.8623 8.71862 13.6409C9.06869 13.4194 9.17299 12.9562 8.95158 12.6061L7.68386 13.4079ZM11.2292 15.0923C11.3277 14.69 11.0814 14.284 10.679 14.1855C10.2767 14.087 9.87069 14.3334 9.77222 14.7357L11.2292 15.0923ZM8.77222 18.8217C8.67375 19.224 8.92009 19.63 9.32243 19.7285C9.72477 19.827 10.1308 19.5806 10.2292 19.1783L8.77222 18.8217ZM9.76171 14.7861C9.69105 15.1942 9.96463 15.5823 10.3728 15.653C10.7809 15.7237 11.1691 15.4501 11.2397 15.0419L9.76171 14.7861ZM12.2397 9.26594C12.3104 8.8578 12.0368 8.46966 11.6287 8.39899C11.2205 8.32833 10.8324 8.60191 10.7617 9.01006L12.2397 9.26594ZM10.1917 15.5974C10.9175 15.9255 11.705 16.0949 12.5015 16.094L12.4999 14.594C11.9171 14.5946 11.3408 14.4707 10.8097 14.2306L10.1917 15.5974ZM12.5136 16.0939C15.7362 16.0386 18.3043 13.3822 18.2506 10.1595L16.7508 10.1845C16.7907 12.5791 14.8825 14.553 12.4879 14.5941L12.5136 16.0939ZM18.2506 10.1845C18.3043 6.96184 15.7362 4.30541 12.5136 4.25011L12.4879 5.74989C14.8825 5.79098 16.7907 7.76488 16.7508 10.1595L18.2506 10.1845ZM12.4879 4.25011C9.26523 4.30541 6.69714 6.96184 6.75082 10.1845L8.25062 10.1595C8.21072 7.76488 10.119 5.79098 12.5136 5.74989L12.4879 4.25011ZM6.75072 10.1699C6.74751 11.316 7.07122 12.4393 7.68386 13.4079L8.95158 12.6061C8.49143 11.8786 8.24831 11.0349 8.25072 10.1741L6.75072 10.1699ZM9.77222 14.7357L8.77222 18.8217L10.2292 19.1783L11.2292 15.0923L9.77222 14.7357ZM11.2397 15.0419L12.2397 9.26594L10.7617 9.01006L9.76171 14.7861L11.2397 15.0419Z" fill="#fff"/>
+                </svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer__container--copyright">
+      © 2019 Digital Project. Все права защищены.
+    </div>
+   </div>
+  </body>
+</html>
